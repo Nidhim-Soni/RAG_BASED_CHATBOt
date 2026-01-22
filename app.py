@@ -71,7 +71,7 @@ if pdf_file:
         if msg['role']== 'user':
             st.info(f':green[USER:] :blue[{msg['text']}]')
         else:
-            st.warning(f':orange[CHATBOT:] :blue[{msg['text']}]')
+            st.success(f':orange[CHATBOT:] :blue[{msg['text']}]')
     
     # INPUT FROM THE USER USING STREAMLIT FEATURES
     with st.form('CHATBOT FORM',clear_on_submit=True):
